@@ -223,8 +223,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 //CODE HERE
 
 const printAllNames = (arr) => {
-  
-}
+  for (let i = 0; i < arr.length; i++){
+    console.log(arr[i])
+  };
+};
+
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -236,7 +240,16 @@ const printAllNames = (arr) => {
 
 //CODE HERE
 
+const thatsOdd = (number) => {
+  if (number % 2 === 0){
+    return "That's not odd!"
+  } else {
+    return 'That is odd indeed!'
+  };
+};
 
+let oddChecker = thatsOdd(23)
+console.log(oddChecker)
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
@@ -249,6 +262,12 @@ const printAllNames = (arr) => {
 
 //CODE HERE
 
+const bestMovie = (title) => {
+  return `${title} is the best movie ever!`
+};
+
+let whatIsTheBestMovie = bestMovie('Avengers');
+console.log(whatIsTheBestMovie)
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -286,6 +305,17 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
+const theEliminator = (contestants, loser) => {
+  for (let i = 0; i < contestants.length; i++){
+    if(contestants[i] === loser){
+      contestants.splice(i, 1)
+    }
+  }
+  return contestants
+}
+
+let updatedContestant = theEliminator(contestants, loser)
+// console.log(updatedContestant)
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -295,7 +325,10 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function makeCapital (string){
+  console.log(string.toUpperCase())
+}
+makeCapital(sampleString)
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
