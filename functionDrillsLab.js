@@ -96,6 +96,13 @@ compareNums(25, 50);
 
 //CODE HERE
 
+function add(num3, num4){
+  num3 = +num3
+  num4 = +num4
+  return console.log(num3 + num4)
+}
+
+let sum = add(10,5);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -121,9 +128,9 @@ compareNums(25, 50);
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
 
 // arrow
 // declaration
@@ -136,7 +143,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+const exclaimTwo = str => str.toUpperCase() + "!!!"
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -165,6 +172,18 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function nameCheck(name){
+  if(name === 'Steven'){
+    return 'What is up Steven'
+  } else if(name === 'Bryan'){
+    return 'Hey Bryan!'
+  } else{
+    return `Cool name, ${name}`;
+  };
+};
+
+let nameGreeting = nameCheck("Jerso") 
+console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -178,6 +197,20 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+const favColorFinder = (color) => {
+  if (color === 'red'){
+    return 'red is a great color'
+  } else if (color === 'green') {
+    return 'green is a solid favorite color'
+  } else if (color === 'black'){
+    return 'so trendy'
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  };
+};
+
+let colorRating = favColorFinder('pink');
+console.log(colorRating);
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -189,6 +222,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+const printAllNames = (arr) => {
+  
+}
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -226,7 +262,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr){
+  let answers = [];
 
+  for (i = 0; i < arr.length; i++)
+  if(arr[i] > 100){
+    answers.push('big')
+  } else{
+    answers.push('small')
+  };
+  return answers;
+}
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -285,6 +333,21 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
+// const checkArrayAscending = arr => {
+//   let compareValue = arr[0]
+
+//   for (i = 1; i < arr.length; i++) {
+//     if(compareValue >= arr[i]) {
+//       return false;
+//     } else {
+//       compareValue = arr[i];
+//     }
+//   }
+//   return true;
+// }
+
+// let arrayIsAscending = checkArrayAscending(sampleArray);
+// console.log(arrayIsAscending);
 
 ////////////////// PROBLEM 22 ////////////////////
 
